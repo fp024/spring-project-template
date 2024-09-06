@@ -31,26 +31,38 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
-### 두번째 개선 목표
+### [두번째 개선 목표](./archetypes/spring5-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring5-mvc-project-archetype`
 
 * STS / Eclipse Tool에 의존적인 파일이나 설정은 제거한다.
 
   * 💡 STS에서 Import와 관계 없이, 표준 Maven 프로젝트 파일만 포함한다.
+  * Eclipse의 메타 파일들이 없는 상태에서라도 STS 3에서 `Import... -> Existing Maven Projects` 메뉴로 불러올때 자동으로 잘 인식됨을 확인했다. 👍
 
-* 라이브러리 버전변경
-  * Spring 5의 마지막 버전 기준으로 변경
-  * Logger는 Logback 또는 Log4j2로 변경
+* 라이브러리 버전업
+  * Java 6 -> Java 11
+  * Spring 3.2 -> Spring 5.3의 마지막 버전
+  * Logger는 Log4j 1.2.x에서 Logback 최신
+  * Servlet 2.5 -> Servlet 4
 
-  
-  
+* 스프링 설정
+  * XML 기반 설정 유지
+
+
+
 
 ### 세번째 개선 목표
 
 * 아키타입 프로젝트 이름: `spring6-mvc-project-archetype`
-* Spring 6 기반의 버전으로 별도 아키타입 프로젝트를 만든다.
+* 라이브러리 버전업
+  * Java 11 -> Java 17
+  * Spring 5.3.x -> Spring 6.x의 마지막 버전
   * Servlet 6 기반으로 변경
+
+* Spring 설정
+  * Java 기반 설정으로 변경
+
 
 
 

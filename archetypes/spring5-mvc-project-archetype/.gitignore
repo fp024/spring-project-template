@@ -1,0 +1,5 @@
+# 아키타입 프로젝트여서, 무시되는 파일에 대해 신경써야한다.
+
+.mvn/wrapper/*
+!.mvn/wrapper/maven-wrapper.properties
+target
