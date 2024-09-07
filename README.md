@@ -52,7 +52,7 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
-### 세번째 개선 목표
+### [세번째 개선 목표](./archetypes/spring6-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring6-mvc-project-archetype`
 * 라이브러리 버전업

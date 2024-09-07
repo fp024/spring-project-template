@@ -45,14 +45,14 @@ mvn install
       -DarchetypeArtifactId=spring5-mvc-project-archetype   \
       -DarchetypeVersion=1.0.0-SNAPSHOT                     \
       -DgroupId=org.fp024.sample                            \
-      -DartifactId=spring3-mvc-sample                       \
-      -DprojectName=spring3-mvc-sample
+      -DartifactId=spring5-mvc-sample                       \
+      -DprojectName=spring5-mvc-sample
     ```
 
   * 윈도우의 명령 프롬프트에서 실행한다면 한줄로 입력하는 것이 나은 것 같다.
 
     ```
-    mvn archetype:generate -DarchetypeGroupId=org.fp024.archetype -DarchetypeArtifactId=spring5-mvc-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=org.fp024.sample -DartifactId=spring3-mvc-sample -DprojectName=spring5-mvc-sample 
+    mvn archetype:generate -DarchetypeGroupId=org.fp024.archetype -DarchetypeArtifactId=spring5-mvc-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=org.fp024.sample -DartifactId=spring5-mvc-sample -DprojectName=spring5-mvc-sample 
     ```
 
     * 줄 끝마다 `^`를 붙이면 bash에서 역슬래시 쓴 것 처럼 구분이 되기는 하는데.. 한줄이 나을 것 같음.. 😅
@@ -93,7 +93,7 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 
 ## 기타
 
-### STS 3의 마지막 버전은 Java 16까지가 동식 지원인 것을 알게됨. 😅
+### STS 3의 마지막 버전은 Java 16까지가 공식 지원인 것을 알게됨. 😅
 
 **STS 3.9.18.RELEASE**는 **Eclipse 4.21.0** 기반인데, Java 17로 정의된 Maven 프로젝트를 Import하더라도 런타임 Java 16으로 환경이 낮춰서 실행됨. 😅
 
