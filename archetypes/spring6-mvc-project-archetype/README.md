@@ -99,7 +99,7 @@ mvn install
 
 ### toolchain 설정 추가
 
-프로젝트 빌드시 설정된 JDK 버전으로 정확하기 빌드되도록 maven-toolchain-plugin 설정을 추가했다.
+* 프로젝트 빌드시 설정된 JDK 버전으로 정확하게 빌드되도록 maven-toolchain-plugin 설정을 추가했다.
 
 
 
