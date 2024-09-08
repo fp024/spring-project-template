@@ -2,7 +2,7 @@
 
 > Spring 5 MVC 프로젝트 아키타입
 >
-> * Java 11
+> * Java 1.8
 > * Spring 5.3
 > * Logback Classic
 > * JUnit 5
@@ -89,6 +89,17 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 먼저 3버전의 아키타입 프로젝트에서도 적용했었는데, 여기에는 maven-war-plugin 버전도 정의를 해두었다.
 
 
+
+## JDK 1.8에 맞게 라이브러리 호환성 확인
+
+* logback
+  * logback-classic: 1.3.14
+  * slf4j: 2.0.7
+  * JavaEE, Java 8 지원을 위해서는 1.3.x버전을 사용하는 것이 맞다.
+  * [GitHub - qos-ch/logback: The reliable, generic, fast and flexible logging framework for Java.](https://github.com/qos-ch/logback?tab=readme-ov-file#java-ee-and-jakarta-ee-versions)
+
+* maven-compiler-plugin
+  * 3.11.0 버전 부터 1.8 지원안할 것이라고 deprecated 경고가 나온다. 직전 버전인 3.10.1 버전을 쓰도록 하자!
 
 
 
