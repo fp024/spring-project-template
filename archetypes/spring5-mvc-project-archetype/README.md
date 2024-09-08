@@ -33,27 +33,30 @@ mvn install
     -DarchetypeArtifactId=<archetype-artifactId>          \
     -DarchetypeVersion=<archetype-version>                \
     -DgroupId=<my.groupid>                                \
-    -DartifactId=<my-artifactId>
+    -DartifactId=<my-artifactId>                          \
+    -Dpackage=<my.package>
   ```
-
+  
   * 예시
-
+  
     ```bash
     mvn archetype:generate                                  \
       -DarchetypeGroupId=org.fp024.archetype                \
       -DarchetypeArtifactId=spring5-mvc-project-archetype   \
       -DarchetypeVersion=1.0.0-SNAPSHOT                     \
       -DgroupId=org.fp024.sample                            \
-      -DartifactId=spring5-mvc-sample
+      -DartifactId=spring5-mvc-sample                       \
+      -Dpackage=org.fp024.sample
     ```
 
   * 윈도우의 명령 프롬프트에서 실행한다면 한줄로 입력하는 것이 나은 것 같다.
-
+  
     ```
-    mvn archetype:generate -DarchetypeGroupId=org.fp024.archetype -DarchetypeArtifactId=spring5-mvc-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=org.fp024.sample -DartifactId=spring5-mvc-sample
+    mvn archetype:generate -DarchetypeGroupId=org.fp024.archetype -DarchetypeArtifactId=spring5-mvc-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=org.fp024.sample -DartifactId=spring5-mvc-sample -Dpackage=org.fp024.sample
     ```
-
+  
     * 줄 끝마다 `^`를 붙이면 bash에서 역슬래시 쓴 것 처럼 구분이 되기는 하는데.. 한줄이 나을 것 같음.. 😅
+    * 💡 package 파라미터를 따로 전달하지 않으면 groupId 전달 값 기준으로 패키지를 만든다.
 
 
 
