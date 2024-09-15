@@ -16,7 +16,7 @@
     │  template.xml
     │  wizard.json
     │
-    └─template
+    └─template (💡template.zip의 압축을 해제한 내용) 
         │  .classpath
         │  .project
         │  .springBeans

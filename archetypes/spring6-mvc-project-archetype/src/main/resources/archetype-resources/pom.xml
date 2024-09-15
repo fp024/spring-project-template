@@ -15,10 +15,10 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <spring.version>6.1.12</spring.version>
+    <spring.version>6.1.13</spring.version>
     <aspectj.version>1.9.22.1</aspectj.version>
-    <slf4j.version>2.0.16</slf4j.version>
-    <logback.version>1.5.7</logback.version>
+    <slf4j.version>2.0.15</slf4j.version>
+    <logback.version>1.5.8</logback.version>
 
     <jakarta-inject.version>2.0.1</jakarta-inject.version>
     <jakarta-servlet.version>6.0.0</jakarta-servlet.version>

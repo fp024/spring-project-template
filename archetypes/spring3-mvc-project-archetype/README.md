@@ -8,7 +8,7 @@
 
 ## 아키타입 설치
 
-Nexus에다 올리는 것을 고려하진 않아서, local 리포지터리에만 설치한다.
+Maven Cenral에다 업로드하는 것을 고려하진 않아서, local 리포지터리에만 설치한다.
 
 ```sh
 mvn install
@@ -60,4 +60,4 @@ mvn install
 ## 바로 실행해볼 수 있는 배치파일
 
 * 리포지토리 루트의 test 디렉토리에 배치 파일을 추가해두었다.
-  * make-spring3-project.bat
+  * [make-spring3-project.bat](../../test/make-spring3-project.bat)

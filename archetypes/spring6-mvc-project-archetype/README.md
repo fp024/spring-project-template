@@ -32,7 +32,7 @@
 
 ## 아키타입 설치
 
-Nexus에다 올리는 것을 고려하진 않아서, local 리포지터리에만 설치한다.
+Maven Central에다 업로드하는 것을 고려하진 않아서, local 리포지터리에만 설치한다.
 
 ```sh
 mvn install
@@ -106,7 +106,7 @@ mvn install
 
 ## 기타
 
-### Logback의 초기화 로깅 노출된다.
+### Logback의 초기화 로깅이 노출된다. 🤔
 
 못보던 내용인데,  Test를 돌려보니... Logback 자체의 초기화 작업 로깅이 노출되었다.
 
@@ -122,7 +122,7 @@ mvn install
 
 ```
 
-초기화 작업 로깅이 노출되고나서, 내가 logback.xml에 설정한대로 노출이 되었다.
+초기화 작업 로깅이 노출되고나서, 내가 `logback.xml`에 설정한대로 노출이 되었다.
 
 
 
@@ -135,7 +135,7 @@ mvn install
 
 그래서 설정에 `NopStatusListener`를 추가해주었을 때, 노출이되지 않았다.
 
-원래 따로 설정을 해주지 않아도 다른 프로젝트에서는 보지 못했던 것 같은데...?
+원래 따로 설정을 해주지 않아도 다른 Gradle 프로젝트에서는 이 내용을 보지 못했던 것 같은데...?
 
 
 
@@ -144,4 +144,4 @@ mvn install
 ## 바로 실행해볼 수 있는 배치파일
 
 * 리포지토리 루트의 test 디렉토리에 배치 파일을 추가해두었다.
-  * make-spring6-project.bat
+  * [make-spring6-project.bat](../../test/make-spring6-project.bat)

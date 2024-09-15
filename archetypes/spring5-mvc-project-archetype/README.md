@@ -11,7 +11,7 @@
 
 ## 아키타입 설치
 
-Nexus에다 올리는 것을 고려하진 않아서, local 리포지터리에만 설치한다.
+Maven Central에다 업로드하는 것을 고려하진 않아서, local 리포지터리에만 설치한다.
 
 ```sh
 mvn install
@@ -74,7 +74,7 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 
 ### Log4j 1.2.x 제거
 
-보안 문제가 있는 Log4j 구 버전을 제거하고, Logback Classic으로 변경했다. 로그 규칙은 그대로 따랐다.
+보안 문제가 있는 Log4j 구 버전을 제거하고, Logback Classic으로 변경했다. 로그 설정 규칙은 그대로 따랐다.
 
 
 
@@ -114,4 +114,4 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 ## 바로 실행해볼 수 있는 배치파일
 
 * 리포지토리 루트의 test 디렉토리에 배치 파일을 추가해두었다.
-  * make-spring5-project.bat
+  * [make-spring5-project.bat](../../test/make-spring5-project.bat)
