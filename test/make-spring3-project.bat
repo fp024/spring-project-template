@@ -11,7 +11,13 @@ IF EXIST "%REPO_ROOT_DIR%%ARTIFACT_ID%" (
     @rmdir /S /Q "%REPO_ROOT_DIR%%ARTIFACT_ID%"
 )
 
-@%MAVEN_HOME%\bin\mvn archetype:generate -DarchetypeGroupId=org.fp024.archetype -DarchetypeArtifactId=spring3-mvc-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=%GROUP_ID% -DartifactId=%ARTIFACT_ID% -Dpackage=%PACKAGE%
+@%MAVEN_HOME%\bin\mvn archetype:generate ^
+  -DarchetypeGroupId=org.fp024.archetype ^
+  -DarchetypeArtifactId=spring3-mvc-project-archetype ^
+  -DarchetypeVersion=1.0.0-SNAPSHOT ^
+  -DgroupId=%GROUP_ID% ^
+  -DartifactId=%ARTIFACT_ID% ^
+  -Dpackage=%PACKAGE%
 
 @ECHO "%ARTIFACT_ID% Project is created."
 PAUSE
