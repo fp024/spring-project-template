@@ -19,7 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
           classes = {Controller.class})
     })
 @EnableWebMvc
-public class WebMvcConfig implements WebMvcConfigurer {
+public class ServletConfig implements WebMvcConfigurer {
 
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {

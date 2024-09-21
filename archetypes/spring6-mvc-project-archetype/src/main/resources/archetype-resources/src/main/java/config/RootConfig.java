@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
           classes = {Controller.class}),
       @ComponentScan.Filter(
           type = FilterType.ASSIGNABLE_TYPE,
-          classes = {WebMvcConfig.class})
+          classes = {ServletConfig.class})
     })
 public class RootConfig {
   /*

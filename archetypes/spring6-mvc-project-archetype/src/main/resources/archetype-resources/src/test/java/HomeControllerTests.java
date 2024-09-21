@@ -7,7 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 import ${package}.config.RootConfig;
-import ${package}.config.WebMvcConfig;
+import ${package}.config.ServletConfig;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-@SpringJUnitWebConfig(classes = {WebMvcConfig.class, RootConfig.class})
+@SpringJUnitWebConfig(classes = {RootConfig.class, ServletConfig.class})
 class HomeControllerTests {
 
   private MockMvc mockMvc;
