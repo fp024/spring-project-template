@@ -101,6 +101,11 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 
 * maven-compiler-plugin
   * 3.11.0 버전 부터 1.8 지원안할 것이라고 deprecated 경고가 나온다. 직전 버전인 3.10.1 버전을 쓰도록 하자!
+* hamcrest
+  * 3.0
+    * https://github.com/hamcrest/JavaHamcrest/releases/tag/v3.0
+    * 최소 요구사항이 Java 1.8이 되었다.  이전 버전의 Java를 사용한다면 2.2 버전을 사용해야한다.
+
 
 
 

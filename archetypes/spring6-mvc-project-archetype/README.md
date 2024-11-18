@@ -105,6 +105,16 @@ mvn install
 
 
 
+## 버전 호환성
+
+### Spring 
+
+* 6.2.x
+  * https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions#jdk-version-range
+  * JDK 최소 요구 사항이 17인 것은 7.0.x에도 유효하다.
+
+
+
 ## 기타
 
 ### Logback의 초기화 로깅이 노출된다. 🤔

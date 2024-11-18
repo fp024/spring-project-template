@@ -15,20 +15,20 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <spring.version>6.1.13</spring.version>
+    <spring.version>6.2.0</spring.version>
     <aspectj.version>1.9.22.1</aspectj.version>
     <slf4j.version>2.0.15</slf4j.version>
-    <logback.version>1.5.8</logback.version>
+    <logback.version>1.5.12</logback.version>
 
     <jakarta-inject.version>2.0.1</jakarta-inject.version>
     <jakarta-servlet.version>6.0.0</jakarta-servlet.version>
     <jakarta-servlet-jsp-jstl.version>3.0.1</jakarta-servlet-jsp-jstl.version>
     <glassfish-jstl.version>3.0.1</glassfish-jstl.version>
 
-    <junit.version>5.11.0</junit.version>
+    <junit.version>5.11.3</junit.version>
     <hamcrest.version>3.0</hamcrest.version>
     <assertj.version>3.26.3</assertj.version>
-    <mockito.version>5.13.0</mockito.version>
+    <mockito.version>5.14.2</mockito.version>
 
     <!-- Maven Plugin Version -->
     <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>

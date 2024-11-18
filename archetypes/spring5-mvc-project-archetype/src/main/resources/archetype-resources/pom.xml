@@ -25,8 +25,8 @@
     <jsp-api.version>2.3.3</jsp-api.version>
     <jstl.version>1.2</jstl.version>
 
-    <junit.version>5.11.0</junit.version>
-    <hamcrest.version>2.2</hamcrest.version>
+    <junit.version>5.11.3</junit.version>
+    <hamcrest.version>3.0</hamcrest.version>
     <assertj.version>3.26.3</assertj.version>
 
     <!-- Maven Plugin Version -->
