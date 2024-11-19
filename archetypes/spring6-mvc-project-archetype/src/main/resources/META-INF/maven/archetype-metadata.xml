@@ -32,7 +32,6 @@
       <directory>src/main/resources</directory>
       <includes>
         <include>**/*.xml</include>
-        <include>**/org.springframework.web.WebApplicationInitializer</include>
       </includes>
     </fileSet>
 
