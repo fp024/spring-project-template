@@ -63,3 +63,18 @@ mvn install
 * 리포지토리 루트의 test 디렉토리에 배치 파일을 추가해두었다.
   * 윈도우: [make-spring3-project.bat](../../test/win/make-spring3-project.bat)
   * 리눅스: [make-spring3-project.sh](../../test/linux/make-spring3-project.sh)
+
+
+
+## 웹 서버 실행
+
+Cargo Maven Plugin을 사용해서 Tomcat으로 바로 실행시켜볼 수있게 배치파일을 추가했다.
+
+아키타입으로 생성한 프로젝트에서 다음 명령실행으로 실행 시킬 수 있다.
+
+> 💡Cargo를 통해 Java 6 환경으로 실행시키면 좋긴한데...  Cargo의 JDK 최소 지원이 8 버전이여서, 
+> JDK 8 환경에서 실행해야한다.
+
+* 윈도우: `tomcat-run.bat`
+* 리눅스: `tomcat-run.sh`
+

@@ -65,6 +65,18 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
+## Toolchain
+
+템플릿 프로젝트에 toolchain을 적용했기 때문에, ~/.m2 디렉토리에 toolchains.xml 파일을 만들어 둬야한다.
+
+* [Toolchain 설정](toolchain-setting.md)
+
+
+
+
+
+
+
 
 
 
