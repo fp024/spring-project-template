@@ -80,7 +80,7 @@ Cargo Maven Plugin을 사용해서 Tomcat으로 바로 실행시켜볼 수있게
 
 #### Java 17 환경에서 실행시 오류 로그
 
-실행시... Java 17환경에서 하면... 위의 오류가 발생한다. 적어도 8에서 실행하면 오류없이 잘 실행된다.
+실행시... Java 17환경에서 하면... 아래 오류가 발생한다. 적어도 JDK 8 환경에서 실행하면 오류없이 잘 실행된다.
 
 ```
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project spring3-mvc-sample: Compilation failure
