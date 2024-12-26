@@ -121,3 +121,15 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 
 * 리포지토리 루트의 test 디렉토리에 배치 파일을 추가해두었다.
   * [make-spring5-project.bat](../../test/make-spring5-project.bat)
+
+
+
+## 웹 서버 실행
+
+Cargo Maven Plugin을 사용해서 Tomcat으로 바로 실행시켜볼 수있게 배치파일을 추가했다.
+
+아키타입으로 생성한 프로젝트에서 다음 명령실행으로 실행 시킬 수 있다.
+
+* 윈도우: `tomcat-run.bat`
+* 리눅스: `tomcat-run.sh`
+
