@@ -78,3 +78,16 @@ Cargo Maven Plugin을 사용해서 Tomcat으로 바로 실행시켜볼 수있게
 * 윈도우: `tomcat-run.bat`
 * 리눅스: `tomcat-run.sh`
 
+#### Java 17 환경에서 실행시 오류 로그
+
+실행시... Java 17환경에서 하면... 위의 오류가 발생한다. 적어도 8에서 실행하면 오류없이 잘 실행된다.
+
+```
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project spring3-mvc-sample: Compilation failure
+[ERROR] Failure executing javac, but could not parse the error:
+[ERROR] warning: [options] bootstrap class path not set in conjunction with -source 6
+[ERROR] error: Source option 6 is no longer supported. Use 7 or later.
+[ERROR] error: Target option 6 is no longer supported. Use 7 or later.
+...
+```
+
