@@ -117,10 +117,11 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 
 
 
-## 바로 실행해볼 수 있는 배치파일
+## 바로 실행해볼 수 있는 실행 스크립트 파일
 
 * 리포지토리 루트의 test 디렉토리에 배치 파일을 추가해두었다.
-  * [make-spring5-project.bat](../../test/make-spring5-project.bat)
+  * 윈도우: [make-spring5-project.bat](../../test/win/make-spring5-project.bat)
+  * 리눅스: [make-spring5-project.sh](../../test/linux/make-spring5-project.sh)
 
 
 
