@@ -34,6 +34,10 @@
     <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version> <!-- 💡 JDK 1.8 환경에서는 버전 고정 -->
     <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
 
+    <!-- Cargo Maven3 Plugin -->
+    <cargo-maven3-plugin.version>1.10.16</cargo-maven3-plugin.version>
+    <cargoContextPath>${project.artifactId}</cargoContextPath>
+
   </properties>
 
 
@@ -167,6 +171,20 @@
           <compilerArgument>-Xlint:all</compilerArgument>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven3-plugin</artifactId>
+        <version>${cargo-maven3-plugin.version}</version>
+        <configuration>
+          <deployables>
+            <deployable>
+              <properties>
+                <context>${cargoContextPath}</context>
+              </properties>
+            </deployable>
+          </deployables>
         </configuration>
       </plugin>
     </plugins>
