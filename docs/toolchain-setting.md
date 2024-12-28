@@ -6,7 +6,7 @@ spring5-mvc-sample와 spring6-mvc-sample은 설정을 적용한 상태이기 때
 
 ~/.m2 경로에 toolchains.xml 파일을 만들어주고, JDK 1.8, 17에 대한 설정을 해줘야한다.
 
-* 윈도우: `%USERPROFILE%/.m2`
+* 윈도우: `%USERPROFILE%\.m2`
 * 리눅스: `~/.m2`
 
 ### 예시
