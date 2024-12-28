@@ -91,3 +91,8 @@ Cargo Maven Plugin을 사용해서 Tomcat으로 바로 실행시켜볼 수있게
 ...
 ```
 
+(그런데 위의 오류는 cargo 플러그인과는 관계가 없이, JDK 8 환경까지는 지원되던 컴파일러 옵션 값이 JDK 17에서 지원하지 않기 때문에 발생한 오류인 듯하다.)
+
+💡Cargo Maven Plugin도 이제 최소 지원 버전을 11로 올리려고하는 중이여서, 단순하게 JDK 8 환경에서 웹서버 실행 확인 용도로만 쓰면 될 것 같다.
+
+✨ **spring5-mvc-project-archetype**,  **spring6-mvc-project-archetype**들은 Context Root를 `/`로 변경가능하게 pom.xml에다가 Cargo 설정을 최소한으로 추가했는데, 이 아키타입 프로젝트는 JDK 6에서도 호환이 되는 것이 중요한 편이라..😂, Cargo 설정을 pom.xml에 추가하지 않았다. 😅
