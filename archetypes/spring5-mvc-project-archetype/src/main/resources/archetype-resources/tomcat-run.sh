@@ -4,6 +4,8 @@ source cargo.properties
 
 echo "### Tomcat ${cargo_tomcat_version} Run ... ###"
 
+export MAVEN_OPTS="-Dfile.encoding=UTF-8"
+
 # Maven 명령어 실행
 mvn clean verify org.codehaus.cargo:cargo-maven3-plugin:run \
   -DskipTests \

@@ -6,6 +6,8 @@ FOR /F "tokens=1,* delims==" %%A IN (cargo.properties) DO (
 
 @ECHO ### Tomcat %cargo_tomcat_version% Run ... ###
 
+SET MAVEN_OPTS="-Dfile.encoding=UTF-8"
+
 :: Maven 명령어 실행
 mvn clean verify org.codehaus.cargo:cargo-maven3-plugin:run ^
   -DskipTests ^
