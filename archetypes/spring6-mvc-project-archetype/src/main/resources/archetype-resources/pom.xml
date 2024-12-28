@@ -35,6 +35,10 @@
     <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
     <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
 
+    <!-- Cargo Maven3 Plugin -->
+    <cargo-maven3-plugin.version>1.10.16</cargo-maven3-plugin.version>
+    <cargoContextPath>${project.artifactId}</cargoContextPath>
+
   </properties>
 
 
@@ -177,6 +181,20 @@
           <parameters>true</parameters> <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention -->
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven3-plugin</artifactId>
+        <version>${cargo-maven3-plugin.version}</version>
+        <configuration>
+          <deployables>
+            <deployable>
+              <properties>
+                <context>${cargoContextPath}</context>
+              </properties>
+            </deployable>
+          </deployables>
         </configuration>
       </plugin>
     </plugins>
