@@ -78,21 +78,15 @@ Cargo Maven Plugin을 사용해서 Tomcat으로 바로 실행시켜볼 수있게
 * 윈도우: `tomcat-run.bat`
 * 리눅스: `tomcat-run.sh`
 
-#### Java 17 환경에서 실행시 오류 로그
 
-실행시... Java 17환경에서 하면... 아래 오류가 발생한다. 적어도 JDK 8 환경에서 실행하면 오류없이 잘 실행된다.
 
-```
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project spring3-mvc-sample: Compilation failure
-[ERROR] Failure executing javac, but could not parse the error:
-[ERROR] warning: [options] bootstrap class path not set in conjunction with -source 6
-[ERROR] error: Source option 6 is no longer supported. Use 7 or later.
-[ERROR] error: Target option 6 is no longer supported. Use 7 or later.
-...
-```
+#### Java 6 에서 cargo-maven2-plugin 실행
 
-(그런데 위의 오류는 cargo 플러그인과는 관계가 없이, JDK 8 환경까지는 지원되던 컴파일러 옵션 값이 JDK 17에서 지원하지 않기 때문에 발생한 오류인 듯하다.)
+cargo-maven2-plugin을 JDK 6에서 실행하려면 다음사항이 필요하다
 
-💡Cargo Maven Plugin도 이제 최소 지원 버전을 11로 올리려고하는 중이여서, 단순하게 JDK 8 환경에서 웹서버 실행 확인 용도로만 쓰면 될 것 같다.
+* cargo-maven2-plugin 버전을 1.6.x 버전대로 사용해야함. (1.6.11이 JDK 6 지원 최종 버전)
+  * [Maven Repository: org.codehaus.cargo » cargo-maven2-plugin » 1.6.11](https://mvnrepository.com/artifact/org.codehaus.cargo/cargo-maven2-plugin/1.6.11)
+* ✨ JDK 6에 TLS 1.2가 지원되도록 설정해야한다.
+  * Maven 리포토리에 HTTPS 접속을 해서 다운로드 할 때... TLS 1.2를 지원이 안되서 오류가 난다. 그래서 Bouncy Castle 라이브러리를 설정해서 테스트 해봤는데, 정상 동작했다. 👍 
+  * [JDK 6에 TLS 1.2 지원 설정](../../docs/configuring-tls1.2-support-in-jdk6.md)
 
-✨ **spring5-mvc-project-archetype**,  **spring6-mvc-project-archetype**들은 Context Root를 `/`로 변경가능하게 pom.xml에다가 Cargo 설정을 최소한으로 추가했는데, 이 아키타입 프로젝트는 JDK 6에서도 호환이 되는 것이 중요한 편이라..😂, Cargo 설정을 pom.xml에 추가하지 않았다. 😅

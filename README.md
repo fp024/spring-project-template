@@ -76,10 +76,7 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 ## Cargo Maven Plugin
 
 * [Cargo 링크 문서 모음](docs/cargo-link-docs.md)
-
-
-
-
+* [JDK 6에 TLS 1.2 지원 설정](docs/configuring-tls1.2-support-in-jdk6.md)
 
 
 

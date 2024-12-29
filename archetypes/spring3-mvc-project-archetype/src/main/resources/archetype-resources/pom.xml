@@ -27,6 +27,10 @@
     <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
     <maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
 
+    <!-- Cargo Maven3 Plugin -->
+    <cargo-maven2-plugin.version>1.6.11</cargo-maven2-plugin.version> <!-- 💡JDK 6을 지원하는 마지막 버전 -->
+    <cargoContextPath>${project.artifactId}</cargoContextPath>
+
   </properties>
   <dependencies>
     <!-- Spring -->
@@ -158,6 +162,20 @@
           <compilerArgument>-Xlint:all</compilerArgument>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+        <version>${cargo-maven2-plugin.version}</version>
+        <configuration>
+          <deployables>
+            <deployable>
+              <properties>
+                <context>${cargoContextPath}</context>
+              </properties>
+            </deployable>
+          </deployables>
         </configuration>
       </plugin>
     </plugins>
