@@ -11,14 +11,20 @@
 
 
 1. **Bouncy Castle 라이브러리 복사**:
-   
-   - 다음 경로에 필요한 JAR 파일 복사: `${JAVA_HOME}/jre/lib/ext`
+
+   * 최신 버전 경로
+     * https://www.bouncycastle.org/download/bouncy-castle-java/#latest
+
+   * 다음 경로에 필요한 JAR 파일 복사: `${JAVA_HOME}/jre/lib/ext`
+
      - [bcprov-jdk15to18-1.79.jar](https://downloads.bouncycastle.org/java/bcprov-jdk15to18-1.79.jar)
+
      - [bctls-jdk15to18-1.79.jar](https://downloads.bouncycastle.org/java/bctls-jdk15to18-1.79.jar)
+
      - [bcutil-jdk15to18-1.79.jar](https://downloads.bouncycastle.org/java/bcutil-jdk15to18-1.79.jar)
-   
+
 2. **`java.security` 파일 수정**:
-   
+
    - `java.security` 파일의 `security.provider` 목록에 Bouncy Castle 프로바이더 추가:
      ```properties
      security.provider.1=sun.security.provider.Sun
@@ -37,7 +43,7 @@
      ```properties
      ssl.SocketFactory.provider=org.bouncycastle.jsse.provider.SSLSocketFactoryImpl // 💡 추가
      ```
-   
+
 3. **JCE 파일 복사**:
    - JCE 무제한 강도 정책 파일을 `${JAVA_HOME}/jre/lib/security`에 복사:
      - Oracle 계정으로 로그인하여 다운로드
