@@ -1,8 +1,6 @@
 #!/bin/sh
-# 속성 파일 읽기
-grep -Ev '^#|^$' cargo.properties | while IFS='=' read -r key value; do
-  export "$key=$value"
-done
+# 속성 파일 읽기 (주석(#)과 빈 줄 제외)
+export $(awk -F= '!/^#/ && NF==2 {print $1 "=" $2}' cargo.properties)
 
 echo "### Tomcat ${cargo_tomcat_version} Run ... ###"
 
