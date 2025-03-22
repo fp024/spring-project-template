@@ -1,6 +1,6 @@
 @ECHO OFF
-:: 속성 파일 읽기
-FOR /F "tokens=1,* delims==" %%A IN (cargo.properties) DO (
+:: 속성 파일 읽기 (주석(#)과 빈 줄 제외)
+FOR /F "tokens=1,* delims==" %%A IN ('findstr /V /R "^[#]" cargo.properties ^| findstr /R /V "^$"') DO (
   SET %%A=%%B
 )
 

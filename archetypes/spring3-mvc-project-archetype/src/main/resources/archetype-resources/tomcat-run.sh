@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 # 속성 파일 읽기
-source cargo.properties
+grep -Ev '^#|^$' cargo.properties | while IFS='=' read -r key value; do
+  export "$key=$value"
+done
 
 echo "### Tomcat ${cargo_tomcat_version} Run ... ###"
 
