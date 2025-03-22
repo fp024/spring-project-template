@@ -94,7 +94,7 @@ sts 3에서 `Import... -> Existing Maven Projects` 메뉴에서 프로젝트를 
 ## JDK 1.8에 맞게 라이브러리 호환성 확인
 
 * logback
-  * logback-classic: 1.3.14
+  * logback-classic: 1.3.15
   * slf4j: 2.0.7
   * JavaEE, Java 8 지원을 위해서는 1.3.x버전을 사용하는 것이 맞다.
   * [GitHub - qos-ch/logback: The reliable, generic, fast and flexible logging framework for Java.](https://github.com/qos-ch/logback?tab=readme-ov-file#java-ee-and-jakarta-ee-versions)

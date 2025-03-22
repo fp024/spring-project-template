@@ -17,11 +17,16 @@
 
    * 다음 경로에 필요한 JAR 파일 복사: `${JAVA_HOME}/jre/lib/ext`
 
-     - [bcprov-jdk15to18-1.79.jar](https://downloads.bouncycastle.org/java/bcprov-jdk15to18-1.79.jar)
+     - **bcprov-jdk15to18-1.80.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.80/bcprov-jdk15to18-1.80.jar
+     
+     - **bctls-jdk15to18-1.80.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bctls-jdk15to18/1.80/bctls-jdk15to18-1.80.jar
+     
+     - **bcutil-jdk15to18-1.80.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk15to18/1.80/bcutil-jdk15to18-1.80.jar
 
-     - [bctls-jdk15to18-1.79.jar](https://downloads.bouncycastle.org/java/bctls-jdk15to18-1.79.jar)
-
-     - [bcutil-jdk15to18-1.79.jar](https://downloads.bouncycastle.org/java/bcutil-jdk15to18-1.79.jar)
+   
 
 2. **`java.security` 파일 수정**:
 

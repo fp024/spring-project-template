@@ -16,18 +16,18 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
     <spring.version>5.3.39</spring.version>
-    <aspectj.version>1.9.22.1</aspectj.version>
-    <slf4j.version>2.0.7</slf4j.version> <!-- 💡 JDK 1.8 환경에서는 버전 고정 -->
-    <logback.version>1.3.14</logback.version> <!-- 💡 JDK 1.8 환경에서는 버전 고정 -->
+    <aspectj.version>1.9.23</aspectj.version>
+    <slf4j.version>2.0.7</slf4j.version> <!-- 💡 logback 전이 의존성에 맞춤 -->
+    <logback.version>1.3.15</logback.version> <!-- 💡 JDK 1.8 환경에서는 1.3.x 버전대로 고정 -->
 
     <javax.inject.version>1</javax.inject.version>
     <servlet-api.version>4.0.1</servlet-api.version>
     <jsp-api.version>2.3.3</jsp-api.version>
     <jstl.version>1.2</jstl.version>
 
-    <junit.version>5.11.4</junit.version>
+    <junit.version>5.12.1</junit.version>
     <hamcrest.version>3.0</hamcrest.version>
-    <assertj.version>3.27.0</assertj.version>
+    <assertj.version>3.27.3</assertj.version>
 
     <!-- Maven Plugin Version -->
     <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
@@ -35,7 +35,7 @@
     <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
 
     <!-- Cargo Maven3 Plugin -->
-    <cargo-maven3-plugin.version>1.10.16</cargo-maven3-plugin.version>
+    <cargo-maven3-plugin.version>1.10.18</cargo-maven3-plugin.version>
     <cargoContextPath>${project.artifactId}</cargoContextPath>
 
   </properties>
