@@ -4,7 +4,7 @@ spring3-mvc-sample 에는 toolchain 설정을 하지 않았지만,
 
 spring5-mvc-sample와 spring6-mvc-sample은 설정을 적용한 상태이기 때문에,
 
-~/.m2 경로에 toolchains.xml 파일을 만들어주고, JDK 1.8, 17에 대한 설정을 해줘야한다.
+~/.m2 경로에 toolchains.xml 파일을 만들어주고, JDK 1.8, 17, 21에 대한 설정을 해줘야한다.
 
 * 윈도우: `%USERPROFILE%\.m2`
 * 리눅스: `~/.m2`
@@ -43,6 +43,16 @@ spring5-mvc-sample와 spring6-mvc-sample은 설정을 적용한 상태이기 때
     </provides>
     <configuration>
       <jdkHome>C:/JDK/17</jdkHome>
+    </configuration>
+  </toolchain>
+  <toolchain>
+    <type>jdk</type>
+    <provides>
+      <version>21</version>
+      <vendor>temurin</vendor>
+    </provides>
+    <configuration>
+      <jdkHome>C:/JDK/21</jdkHome>
     </configuration>
   </toolchain>
 </toolchains>
