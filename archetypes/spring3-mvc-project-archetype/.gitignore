@@ -3,3 +3,5 @@
 .mvn/wrapper/*
 !.mvn/wrapper/maven-wrapper.properties
 target
+
+/.idea

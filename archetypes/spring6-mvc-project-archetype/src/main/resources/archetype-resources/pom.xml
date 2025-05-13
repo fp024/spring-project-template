@@ -1,3 +1,4 @@
+#set( $symbol_dollar = '$' )
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -34,6 +35,7 @@
     <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
     <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
     <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+    <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
 
     <!-- Cargo Maven3 Plugin -->
     <cargo-maven3-plugin.version>1.10.19</cargo-maven3-plugin.version>
@@ -152,6 +154,10 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>${maven-war-plugin.version}</version>
         </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -181,6 +187,24 @@
           <parameters>true</parameters> <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention -->
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>properties</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <argLine>-javaagent:$symbol_dollar{org.mockito:mockito-core:jar}</argLine>
         </configuration>
       </plugin>
       <plugin>
