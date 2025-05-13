@@ -1,10 +1,4 @@
 #!/bin/bash
-
-GROUP_ID=org.fp024.sample
-ARTIFACT_ID=spring5-mvc-sample
-PACKAGE=org.fp024.sample
-
-echo ### Create ${ARTIFACT_ID} Project ###
 if [ -f "set-env.properties" ]; then
   source set-env.properties
 else
@@ -12,8 +6,14 @@ else
   source set-env-default.properties
 fi
 
+GROUP_ID=org.fp024.sample
+ARTIFACT_ID=spring5-mvc-sample
+PACKAGE=org.fp024.sample
+
+echo ### Create ${ARTIFACT_ID} Project ###
+
 # 환경변수 설정
-export JAVA_HOME=${JAVA_HOME}
+export JAVA_HOME=${JAVA_8_HOME}
 export MAVEN_HOME=${MAVEN_HOME}
 
 REPO_ROOT_DIR=$(dirname "$(realpath "$0")")

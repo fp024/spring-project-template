@@ -7,13 +7,13 @@ else
 fi
 
 GROUP_ID=org.fp024.sample
-ARTIFACT_ID=spring3-mvc-sample
+ARTIFACT_ID=spring7-mvc-sample
 PACKAGE=org.fp024.sample
 
 echo ### Create ${ARTIFACT_ID} Project ###
 
 # 환경변수 설정
-export JAVA_HOME=${JAVA_8_HOME}
+export JAVA_HOME=${JAVA_21_HOME}
 export MAVEN_HOME=${MAVEN_HOME}
 
 REPO_ROOT_DIR=$(dirname "$(realpath "$0")")
@@ -26,7 +26,7 @@ fi
 
 ${MAVEN_HOME}/bin/mvn archetype:generate \
   -DarchetypeGroupId=org.fp024.archetype \
-  -DarchetypeArtifactId=spring3-mvc-project-archetype \
+  -DarchetypeArtifactId=spring7-mvc-project-archetype \
   -DarchetypeVersion=1.0.0-SNAPSHOT \
   -DgroupId=${GROUP_ID} \
   -DartifactId=${ARTIFACT_ID} \

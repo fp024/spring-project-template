@@ -6,11 +6,11 @@ IF EXIST set-env.bat (
   CALL set-env-default.bat
 )
 
-SET JAVA_HOME=%JAVA_8_HOME%
+SET JAVA_HOME=%JAVA_21_HOME%
 @ECHO JAVA_HOME=%JAVA_HOME%
 
 SET GROUP_ID=org.fp024.sample
-SET ARTIFACT_ID=spring5-mvc-sample
+SET ARTIFACT_ID=spring7-mvc-sample
 SET PACKAGE=org.fp024.sample
 
 @ECHO ### Create %ARTIFACT_ID% Project ###
@@ -22,7 +22,7 @@ IF EXIST "%REPO_ROOT_DIR%%ARTIFACT_ID%" (
 
 @%MAVEN_HOME%\bin\mvn archetype:generate ^
   -DarchetypeGroupId=org.fp024.archetype ^
-  -DarchetypeArtifactId=spring5-mvc-project-archetype ^
+  -DarchetypeArtifactId=spring7-mvc-project-archetype ^
   -DarchetypeVersion=1.0.0-SNAPSHOT ^
   -DgroupId=%GROUP_ID% ^
   -DartifactId=%ARTIFACT_ID% ^

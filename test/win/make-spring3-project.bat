@@ -1,15 +1,19 @@
 @ECHO OFF
-SET GROUP_ID=org.fp024.sample
-SET ARTIFACT_ID=spring3-mvc-sample
-SET PACKAGE=org.fp024.sample
-
-@ECHO ### Create %ARTIFACT_ID% Project ###
 IF EXIST set-env.bat (
   CALL set-env.bat
 ) else (
   ECHO set-env.bat file does not exist, loading default settings.
   CALL set-env-default.bat
 )
+
+SET JAVA_HOME=%JAVA_8_HOME%
+@ECHO JAVA_HOME=%JAVA_HOME%
+
+SET GROUP_ID=org.fp024.sample
+SET ARTIFACT_ID=spring3-mvc-sample
+SET PACKAGE=org.fp024.sample
+
+@ECHO ### Create %ARTIFACT_ID% Project ###
 
 SET REPO_ROOT_DIR=%~dp0
 IF EXIST "%REPO_ROOT_DIR%%ARTIFACT_ID%" (

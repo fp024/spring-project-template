@@ -18,9 +18,9 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
-## 진행
+## 아키타입 템플릿 프로젝트
 
-### [첫번째 개발 목표](./archetypes/spring3-mvc-project-archetype)
+### [Spring 3 MVC Project Archetype](./archetypes/spring3-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring3-mvc-project-archetype`
 * STS에서 템플릿으로 생성한 것과 거의 동일한 모양이 나오도록 한다.
@@ -31,7 +31,7 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
-### [두번째 개선 목표](./archetypes/spring5-mvc-project-archetype)
+### [Spring 5 MVC Project Archetype](./archetypes/spring5-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring5-mvc-project-archetype`
 
@@ -41,10 +41,10 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
   * Eclipse의 메타 파일들이 없는 상태에서라도 STS 3에서 `Import... -> Existing Maven Projects` 메뉴로 불러올때 자동으로 잘 인식됨을 확인했다. 👍
 
 * 라이브러리 버전업
-  * Java 6 -> Java 8
-  * Spring 3.2 -> Spring 5.3의 마지막 버전
+  * Java 6 `->` Java 8
+  * Spring 3.2 `->` Spring 5.3의 마지막 버전
   * Logger는 Log4j 1.2.x에서 Logback 1.3.x (JavaEE, Java 8)
-  * Servlet 2.5 -> Servlet 4
+  * Servlet 2.5 `->` Servlet 4
 
 * 스프링 설정
   * XML 기반 설정 유지
@@ -52,16 +52,32 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
-### [세번째 개선 목표](./archetypes/spring6-mvc-project-archetype)
+### [Spring 6 MVC Project Archetype](./archetypes/spring6-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring6-mvc-project-archetype`
 * 라이브러리 버전업
-  * Java 11 -> Java 17
-  * Spring 5.3.x -> Spring 6.x의 마지막 버전
-  * Servlet 6 기반으로 변경
-
+  * Java 11 `->` Java 17
+  * Spring 5.3.x `->` Spring 6.x의 마지막 버전
+  * Jakarta EE 9+ `->` Servlet 6 기반으로 변경
+  * Tomcat 10.1
+  
 * Spring 설정
   * Java 기반 설정으로 변경
+
+
+
+
+
+
+### [Spring 7 MVC Project Archetype](./archetypes/spring7-mvc-project-archetype)
+
+* 아키타입 프로젝트 이름: `spring7-mvc-project-archetype`
+* 라이브러리 버전업
+  * Java 17 `->` Java 21
+  * Spring 6.x `->` Spring 7.0.x의 마지막 버전 (아직 마일스톤 버전 - Milestone 4)
+    * 따로 Snapshot 리포지토리를 추가할 필요는 없었다.
+  * Jakarta EE 11+ `->` Servlet 6.1로 디펜던시 변경
+  * Tomcat 11
 
 
 
@@ -88,3 +104,4 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 * make-spring3-project.bat
 * make-spring5-project.bat
 * make-spring6-project.bat
+* make-spring7-project.bat
