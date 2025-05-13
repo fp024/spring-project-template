@@ -106,11 +106,15 @@ mvn install
 
 ## 기타
 
-### tomcat-run.bat을 실행할 때, Java환경이 21이여아한다. 🤔
+### 💡tomcat-run.bat을 실행할 때, Java환경이 Java 21 이상이여아한다. 
 
-이건 좀깔린다. Java 17 환경으로 tomcat-run.bat을 실행하더라도 특이한 로그는 없는데 페이지 접근이 안되었다.
+프로젝트 컴파일 레벨이 Java 21로 되어있으므로, Tomcat의 런타임 환경도 Java 21 이상이 되어야함.
 
-Java 21환경에서는 문제가 없음.
+Java 21 미만에서 실행할 경우, 21 기준으로 컴파일된 클래스를 찾지 못해서 다음과 같은 로그가 표시되고, 스프링 자체가 초기화되지 않는다.
+
+```
+[INFO] INFO: No Spring WebApplicationInitializer types detected on classpath
+```
 
 
 
