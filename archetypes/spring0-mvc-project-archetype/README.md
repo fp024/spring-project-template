@@ -80,13 +80,18 @@ mvn install
 ### Spring 
 
 * 6.2.x
-  * thymeleaf-spring7이 아직은 출시되지 않아서 Spring 6버전대로 사용하자
-  * Spring 6 버전대를 사용하는 동안은 Tomcat 10.1을 사용, 모든 것을 7기준으로 올렸을 때, 11버전 쓰면 되겠다.
+  * thymeleaf-spring7이 아직은 출시되지 않아서 Spring 6버전대로 사용하자!
+  * Spring 6을 사용하는 동안은 Tomcat 10.1을 사용한다.
+    * 모든 것을 Spring 7기준으로 올렸을 때, Tomcat 11버전으로 업그레이드 하면 되겠다.
 
 
 ### Thymeleaf
 
-* thymeleaf-spring6의 마지막 버전
+* thymeleaf-spring6
+
+### WebJars
+
+* Bootstrap, jQuery
 
 
 
