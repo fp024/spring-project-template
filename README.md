@@ -65,10 +65,6 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
   * Java 기반 설정으로 변경
 
 
-
-
-
-
 ### [Spring 7 MVC Project Archetype](./archetypes/spring7-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring7-mvc-project-archetype`
@@ -78,6 +74,17 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
     * 따로 Snapshot 리포지토리를 추가할 필요는 없었다.
   * Jakarta EE 11+ `->` Servlet 6.1로 디펜던시 변경
   * Tomcat 11
+
+
+
+### [Spring 0 MVC Project Archetype](./archetypes/spring7-mvc-project-archetype)
+
+* 아키타입 프로젝트 이름: `spring0-mvc-project-archetype`
+* 💡실험적인 아키타입
+  * 템플릿에 좀 더 여러가지 기능 추가
+    * 뷰 템플릿을 JSP 대신, Thymeleaf 등을 사용시도
+    * WebJars 추가 (Bootstrap, jQuery)
+    * 나중에 필요시는 Hibernate + 메모리DB 설정 추가
 
 
 
@@ -101,6 +108,7 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 리포지토리 루트의 [test](test) 디렉토리에다 `mvn archetype:generate` 명령을 실행시키는 배치 파일을 미리 만들어 두었다.
 
+* make-spring0-project.bat
 * make-spring3-project.bat
 * make-spring5-project.bat
 * make-spring6-project.bat
