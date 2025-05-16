@@ -77,7 +77,7 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 
 
 
-### [Spring 0 MVC Project Archetype](./archetypes/spring7-mvc-project-archetype)
+### [Spring 0 MVC Project Archetype](./archetypes/spring0-mvc-project-archetype)
 
 * 아키타입 프로젝트 이름: `spring0-mvc-project-archetype`
 * 💡실험적인 아키타입
