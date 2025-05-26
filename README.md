@@ -70,7 +70,7 @@ STS에서 인식하는 다음의 원본 내용을 참고해서 만든다.
 * 아키타입 프로젝트 이름: `spring7-mvc-project-archetype`
 * 라이브러리 버전업
   * Java 17 `->` Java 21
-  * Spring 6.x `->` Spring 7.0.x의 마지막 버전 (아직 마일스톤 버전 - Milestone 4)
+  * Spring 6.x `->` Spring 7.0.x의 마지막 버전 (아직 마일스톤 버전 - Milestone 5)
     * 따로 Snapshot 리포지토리를 추가할 필요는 없었다.
   * Jakarta EE 11+ `->` Servlet 6.1로 디펜던시 변경
   * Tomcat 11

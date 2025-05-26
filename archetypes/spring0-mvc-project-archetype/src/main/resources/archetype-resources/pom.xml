@@ -16,7 +16,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <spring.version>6.2.6</spring.version>
+    <spring.version>6.2.7</spring.version>
     <aspectj.version>1.9.24</aspectj.version>
     <slf4j.version>2.0.17</slf4j.version>
     <logback.version>1.5.18</logback.version>
@@ -37,7 +37,7 @@
     <junit.version>5.12.2</junit.version>
     <hamcrest.version>3.0</hamcrest.version>
     <assertj.version>3.27.3</assertj.version>
-    <mockito.version>5.17.0</mockito.version>
+    <mockito.version>5.18.0</mockito.version>
 
     <!-- Maven Plugin Version -->
     <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
