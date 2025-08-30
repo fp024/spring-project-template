@@ -1,6 +1,7 @@
 package ${package}.config;
 
 import java.nio.charset.StandardCharsets;
+import lombok.RequiredArgsConstructor;
 import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -27,13 +28,10 @@ import org.thymeleaf.templatemode.TemplateMode;
           classes = {Controller.class})
     })
 @EnableWebMvc
+@RequiredArgsConstructor
 public class ServletConfig implements WebMvcConfigurer {
 
   private final ApplicationContext applicationContext;
-
-  public ServletConfig(ApplicationContext applicationContext) {
-    this.applicationContext = applicationContext;
-  }
 
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {

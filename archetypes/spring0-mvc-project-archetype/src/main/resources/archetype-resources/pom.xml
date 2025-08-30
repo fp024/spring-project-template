@@ -23,7 +23,10 @@
 
     <jakarta-inject.version>2.0.1</jakarta-inject.version>
     <jakarta-servlet.version>6.1.0</jakarta-servlet.version>
-    
+
+    <!-- Lombok -->
+    <lombok.version>1.18.38</lombok.version>
+
     <!-- Thymeleaf -->
     <thymeleaf.version>3.1.3.RELEASE</thymeleaf.version>
     <thymeleaf-layout-dialect.version>3.4.0</thymeleaf-layout-dialect.version>
@@ -63,6 +66,14 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
+    </dependency>
+
+    <!-- Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- AspectJ -->
