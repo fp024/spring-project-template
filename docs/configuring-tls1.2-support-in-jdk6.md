@@ -14,17 +14,18 @@
 
    * 최신 버전 경로
      * https://www.bouncycastle.org/download/bouncy-castle-java/#latest
+     * 다운로드 링크가 깨져있어서, mvn repo에서 직접 다운로드 받으면 된다.
 
    * 다음 경로에 필요한 JAR 파일 복사: `${JAVA_HOME}/jre/lib/ext`
 
-     - **bcprov-jdk15to18-1.80.jar**
-       - https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.80/bcprov-jdk15to18-1.80.jar
+     - **bcprov-jdk15to18-1.81.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.81/bcprov-jdk15to18-1.81.jar
      
-     - **bctls-jdk15to18-1.80.jar**
-       - https://repo1.maven.org/maven2/org/bouncycastle/bctls-jdk15to18/1.80/bctls-jdk15to18-1.80.jar
+     - **bctls-jdk15to18-1.81.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bctls-jdk15to18/1.81/bctls-jdk15to18-1.81.jar
      
-     - **bcutil-jdk15to18-1.80.jar**
-       - https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk15to18/1.80/bcutil-jdk15to18-1.80.jar
+     - **bcutil-jdk15to18-1.81.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk15to18/1.81/bcutil-jdk15to18-1.81.jar
 
    
 
@@ -54,3 +55,22 @@
      - Oracle 계정으로 로그인하여 다운로드
      - [JCE 다운로드 링크](https://www.oracle.com/java/technologies/jce-6-download.html)
 
+4. **Maven 빌드시 TLS 1.2를 명시적으로 사용하도록 다음 옵션을 추가**:
+
+   ```sh
+   # Windows
+   SET MAVEN_OPTS=-Dhttps.protocols=TLSv1.2
+   # Linux
+   export MAVEN_OPTS=-Dhttps.protocols=TLSv1.2
+   ```
+
+
+---
+
+### **💡 위의 방법이 잘 적용되지 않을 때...**
+
+비공식적인 방법이라, 나중에 얼마든지 중단 될 수 있을 것 같다. 그런 상황이 되면...
+
+잠시 JDK 8, 17등을 사용해서 라이브러리 / 플러그인들을... 
+
+로컬 컴퓨터의 로컬리포지토리(.m2)에 받아지도록 실행하고, 다시 JDK 6 환경에서 실행하면 정상 실행된다.

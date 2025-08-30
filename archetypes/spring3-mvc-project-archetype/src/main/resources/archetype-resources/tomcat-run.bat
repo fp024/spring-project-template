@@ -6,7 +6,7 @@ FOR /F "tokens=1,* delims==" %%A IN ('findstr /V /R "^[#]" cargo.properties ^| f
 
 @ECHO ### Tomcat %cargo_tomcat_version% Run ... ###
 
-SET MAVEN_OPTS="-Dfile.encoding=UTF-8"
+SET MAVEN_OPTS="-Dfile.encoding=UTF-8 -Dhttps.protocols=TLSv1.2"
 
 :: Maven 명령어 실행
 mvn clean verify org.codehaus.cargo:cargo-maven2-plugin:run ^

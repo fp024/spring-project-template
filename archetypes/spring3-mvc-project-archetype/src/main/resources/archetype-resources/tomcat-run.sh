@@ -4,7 +4,7 @@ export $(awk -F= '!/^#/ && NF==2 {print $1 "=" $2}' cargo.properties)
 
 echo "### Tomcat ${cargo_tomcat_version} Run ... ###"
 
-export MAVEN_OPTS="-Dfile.encoding=UTF-8"
+export MAVEN_OPTS="-Dfile.encoding=UTF-8 -Dhttps.protocols=TLSv1.2"
 
 # Maven 명령어 실행
 mvn clean verify org.codehaus.cargo:cargo-maven2-plugin:run \
