@@ -16,7 +16,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <spring.version>6.2.7</spring.version>
+    <spring.version>6.2.10</spring.version>
     <aspectj.version>1.9.24</aspectj.version>
     <slf4j.version>2.0.17</slf4j.version>
     <logback.version>1.5.18</logback.version>
@@ -31,13 +31,13 @@
     <!-- WebJars -->
     <webjars-locator-core.version>0.59</webjars-locator-core.version>
     <webjars-jquery.version>3.7.1</webjars-jquery.version>
-    <webjars-bootstrap.version>5.3.5</webjars-bootstrap.version>
+    <webjars-bootstrap.version>5.3.8</webjars-bootstrap.version>
 
     <!-- Testing -->
-    <junit.version>5.12.2</junit.version>
+    <junit.version>5.13.4</junit.version>
     <hamcrest.version>3.0</hamcrest.version>
-    <assertj.version>3.27.3</assertj.version>
-    <mockito.version>5.18.0</mockito.version>
+    <assertj.version>3.27.4</assertj.version>
+    <mockito.version>5.19.0</mockito.version>
 
     <!-- Maven Plugin Version -->
     <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
@@ -46,7 +46,7 @@
     <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
 
     <!-- Cargo Maven3 Plugin -->
-    <cargo-maven3-plugin.version>1.10.19</cargo-maven3-plugin.version>
+    <cargo-maven3-plugin.version>1.10.21</cargo-maven3-plugin.version>
     <cargoContextPath>${project.artifactId}</cargoContextPath>
 
   </properties>
