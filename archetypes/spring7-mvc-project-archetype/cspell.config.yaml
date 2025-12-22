@@ -1,0 +1,12 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  - codehaus
+  - Dcargo
+  - deployables
+  - Dskip
+  - findstr
+ignoreWords: []
+import: []

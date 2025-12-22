@@ -1,0 +1,23 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  - buildcommand
+  - Buildcommands
+  - codehaus
+  - Dcargo
+  - deployables
+  - Dhttps
+  - Dskip
+  - findstr
+  - Javadocs
+  - jdmk
+  - jmxri
+  - jmxtools
+  - projectnature
+  - Projectnatures
+  - springbuilder
+  - springnature
+ignoreWords: []
+import: []

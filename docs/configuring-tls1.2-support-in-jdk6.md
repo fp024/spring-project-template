@@ -18,14 +18,14 @@
 
    * 다음 경로에 필요한 JAR 파일 복사: `${JAVA_HOME}/jre/lib/ext`
 
-     - **bcprov-jdk15to18-1.81.jar**
-       - https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.81/bcprov-jdk15to18-1.81.jar
+     - **bcprov-jdk15to18-1.83.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15to18/1.83/bcprov-jdk15to18-1.83.jar
      
-     - **bctls-jdk15to18-1.81.jar**
-       - https://repo1.maven.org/maven2/org/bouncycastle/bctls-jdk15to18/1.81/bctls-jdk15to18-1.81.jar
+     - **bctls-jdk15to18-1.83.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bctls-jdk15to18/1.83/bctls-jdk15to18-1.83.jar
      
-     - **bcutil-jdk15to18-1.81.jar**
-       - https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk15to18/1.81/bcutil-jdk15to18-1.81.jar
+     - **bcutil-jdk15to18-1.83.jar**
+       - https://repo1.maven.org/maven2/org/bouncycastle/bcutil-jdk15to18/1.83/bcutil-jdk15to18-1.83.jar
 
    
 

@@ -6,7 +6,7 @@
 > * Jakarta EE 11+ : Servlet 6.1
 > * Spring 7
 > * Logback Classic
-> * JUnit 5
+> * JUnit 6
 > * Tomcat 11
 
 
@@ -18,7 +18,7 @@
 버전이나 속성 이름 규칙은 Spring Boot dependencies를 참고했다.
 
 * https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies
-* https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/3.4.5/spring-boot-dependencies-3.4.5.pom
+* https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/3.5.9/spring-boot-dependencies-3.5.9.pom
 
 
 
