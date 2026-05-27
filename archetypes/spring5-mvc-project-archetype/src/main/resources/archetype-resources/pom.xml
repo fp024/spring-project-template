@@ -25,9 +25,9 @@
     <jsp-api.version>2.3.3</jsp-api.version>
     <jstl.version>1.2</jstl.version>
 
-    <junit.version>5.14.1</junit.version>
+    <junit.version>5.14.4</junit.version>
     <hamcrest.version>3.0</hamcrest.version>
-    <assertj.version>3.27.6</assertj.version>
+    <assertj.version>3.27.7</assertj.version>
 
     <!-- Maven Plugin Version -->
     <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
@@ -35,7 +35,7 @@
     <maven-war-plugin.version>3.5.1</maven-war-plugin.version>
 
     <!-- Cargo Maven3 Plugin -->
-    <cargo-maven3-plugin.version>1.10.25</cargo-maven3-plugin.version>
+    <cargo-maven3-plugin.version>1.10.27</cargo-maven3-plugin.version>
     <cargoContextPath>${project.artifactId}</cargoContextPath>
 
   </properties>
