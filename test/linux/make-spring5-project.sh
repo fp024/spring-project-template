@@ -6,9 +6,7 @@ else
   source set-env-default.properties
 fi
 
-GROUP_ID=org.fp024.sample
 ARTIFACT_ID=spring5-mvc-sample
-PACKAGE=org.fp024.sample
 
 echo ### Create ${ARTIFACT_ID} Project ###
 
