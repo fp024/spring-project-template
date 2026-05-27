@@ -9,9 +9,7 @@ IF EXIST set-env.bat (
 SET JAVA_HOME=%JAVA_21_HOME%
 @ECHO JAVA_HOME=%JAVA_HOME%
 
-SET GROUP_ID=org.fp024.sample
 SET ARTIFACT_ID=spring0-mvc-sample
-SET PACKAGE=org.fp024.sample
 
 @ECHO ### Create %ARTIFACT_ID% Project ###
 
