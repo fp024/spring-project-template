@@ -30,7 +30,6 @@
     <assertj.version>3.27.7</assertj.version>
 
     <!-- Maven Plugin Version -->
-    <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
     <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version> <!-- 💡 JDK 1.8 환경에서는 버전 고정 -->
     <maven-war-plugin.version>3.5.1</maven-war-plugin.version>
 
@@ -134,10 +133,6 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <artifactId>maven-toolchains-plugin</artifactId>
-          <version>${maven-toolchains-plugin.version}</version>
-        </plugin>
-        <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven-compiler-plugin.version}</version>
         </plugin>
@@ -148,23 +143,6 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <artifactId>maven-toolchains-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>toolchain</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <toolchains>
-            <jdk>
-              <version>${maven.compiler.target}</version>
-            </jdk>
-          </toolchains>
-        </configuration>
-      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
